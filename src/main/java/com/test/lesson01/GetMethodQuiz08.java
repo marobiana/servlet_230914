@@ -4,8 +4,10 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,6 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/lesson01/quiz08")
 public class GetMethodQuiz08 extends HttpServlet {
+	// 테스트 주석 추가
 
 	@Override
 	public void doGet(HttpServletRequest request
@@ -40,9 +43,31 @@ public class GetMethodQuiz08 extends HttpServlet {
 		Iterator<String> iter = list.iterator();
 		while (iter.hasNext()) {
 			String line = iter.next();
+			
+			// 검색
+//			if (line.contains(keyword)) {
+//				out.print(line + "<br>");
+//			}
+			
+			// 1)
+//			if (line.contains(keyword)) {
+//				String[] words = line.split(keyword); // 0:앞문장, 1:뒷문장
+//				out.print(words[0] + "<b>" + keyword + "</b>" + words[1] + "<br>");
+//			}
+			
+			// 2)
 			if (line.contains(keyword)) {
+				line = line.replace(keyword, "<b>" + keyword + "</b>");
 				out.print(line + "<br>");
 			}
 		}
 	}
 }
+
+
+
+
+
+
+
+
