@@ -7,7 +7,7 @@
 <title>GET Method</title>
 </head>
 <body>
-	<a href="/lesson02/ex02_1.jsp?user_id=marobiana&name=신보람&age=30">아이디와 이름과 나이를 넘기는 링크</a>
+	<a class="btn btn-success" href="/lesson02/ex02_1.jsp?user_id=marobiana&name=신보람&age=30">아이디와 이름과 나이를 넘기는 링크</a>
 </body>
 </html>
 
