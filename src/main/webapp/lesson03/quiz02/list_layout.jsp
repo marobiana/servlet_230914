@@ -19,46 +19,16 @@
 <body>
 	<div id="wrap" class="container">
 		<header class="d-flex align-items-center">
-			<div class="col-2">
-				<h3><a href="#" class="text-success">Melong</a></h3>
-			</div>
-			<div class="col-10">
-				<div class="input-group">
-					<input type="text" class="form-control col-6" name="search">
-					<div class="input-group-append">
-						<input type="submit" class="btn btn-info" value="검색">
-					</div>
-				</div>
-			</div>
+			<jsp:include page="header.jsp" />
 		</header>
 		<nav>
-			<ul class="nav">
-				<li class="nav-item"><a href="#" class="nav-link text-dark font-weight-bold">멜롱차트</a></li>
-				<li class="nav-item"><a href="#" class="nav-link text-dark font-weight-bold">최신음악</a></li>
-				<li class="nav-item"><a href="#" class="nav-link text-dark font-weight-bold">장르음악</a></li>
-				<li class="nav-item"><a href="#" class="nav-link text-dark font-weight-bold">멜롱DJ</a></li>
-				<li class="nav-item"><a href="#" class="nav-link text-dark font-weight-bold">뮤직어워드</a></li>
-			</ul>
+			<jsp:include page="menu.jsp" />
 		</nav>
 		<section class="content py-4">
-			<%-- 가수 정보 --%>
-			
-			<%-- 곡 목록 영역 --%>
-			<h4>곡 목록</h4>
-			<table class="table text-center">
-				<thead>
-					<tr>
-						<th>no</th>
-						<th>제목</th>
-						<th>앨범</th>
-					</tr>
-				</thead>
-				<tbody></tbody>
-			</table>
+			<jsp:include page="list.jsp" />
 		</section>
 		<footer>
-			<hr>
-			<small class="text-secondary">Copyright 2023. melong All Rights Reserved.</small>
+			<jsp:include page="footer.jsp" />
 		</footer>
 	</div>
 </body>
