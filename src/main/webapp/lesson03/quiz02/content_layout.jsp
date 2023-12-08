@@ -27,7 +27,7 @@
 			<jsp:include page="menu.jsp" />
 		</nav>
 		<section class="content py-4">
-			<jsp:include page="list.jsp" />
+			<jsp:include page="content.jsp" />
 		</section>
 		<footer>
 			<jsp:include page="footer.jsp" />
